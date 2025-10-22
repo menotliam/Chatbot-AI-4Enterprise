@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHATBOTAI - AI Chat Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <h1>CHATBOTAI</h1>
+                </div>
+                <div class="status">
+                    <span class="status-dot" id="statusDot"></span>
+                    <span class="status-text" id="statusText">Đang kết nối...</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="chat-container">
+            <div class="chat-messages" id="chatMessages">
+                <div class="welcome-message">
+                    <div class="bot-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-text">
+                            Xin chào! Tôi là CHATBOTAI, trợ lý AI của bạn. Tôi có thể giúp bạn với nhiều câu hỏi khác nhau. Hãy bắt đầu cuộc trò chuyện!
+                        </div>
+                        <div class="message-time">Bây giờ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                <div class="bot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <div class="input-wrapper">
+                <input type="text" id="messageInput" placeholder="Nhập tin nhắn của bạn..." maxlength="1000">
+                <button id="sendButton" class="send-button">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="input-actions">
+                <button id="clearButton" class="action-button" title="Xóa cuộc trò chuyện">
+                    <i class="fas fa-trash"></i>
+                </button>
+                <button id="settingsButton" class="action-button" title="Cài đặt">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Cài đặt</h3>
+                <button class="close-button" id="closeSettings">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="setting-group">
+                    <label for="userId">User ID:</label>
+                    <input type="text" id="userId" value="user123" placeholder="Nhập User ID">
+                </div>
+                <div class="setting-group">
+                    <label for="apiUrl">API URL:</label>
+                    <input type="text" id="apiUrl" value="http://localhost:8000" placeholder="API endpoint">
+                </div>
+                <div class="setting-group">
+                    <label for="theme">Theme:</label>
+                    <select id="theme">
+                        <option value="light">Sáng</option>
+                        <option value="dark">Tối</option>
+                    </select>
+                </div>
+                <div class="setting-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="enhanceResponse" checked>
+                        <span class="checkmark"></span>
+                        AI Enhancement (Cải thiện phản hồi)
+                    </label>
+                    <small class="setting-description">Cho phép AI xử lý lại phản hồi để đẹp hơn với emoji và định dạng</small>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="saveSettings" class="primary-button">Lưu</button>
+                <button id="cancelSettings" class="secondary-button">Hủy</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>

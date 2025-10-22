@@ -1,0 +1,21 @@
+# Web Framework
+fastapi==0.103.2
+uvicorn==0.23.2
+
+openai == 1.104.2
+# Database
+motor==3.3.1
+pymongo==4.5.0
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# Logging
+loguru==0.7.2
+
+# Token Counting
+tiktoken==0.5.1
+
+# Essential utilities
+pydantic==2.4.2
+jinja2
