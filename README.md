@@ -1,4 +1,4 @@
-# CHATBOTAI
+# CHATBOT-AI-4Enterprise
 
 A modern, scalable AI chatbot platform built with FastAPI, OpenAI GPT models, and MongoDB. Features conversational AI with chat history management, to### Useful Docker commands
 ```bash
@@ -17,9 +17,9 @@ make docker-logs
 
 ## 🤖 AI Response Enhancement
 
-# CHATBOTAI
+# CHATBOT-AI-4Enterprise
 
-CHATBOTAI is a modern, production-oriented AI chatbot platform built with FastAPI, OpenAI, and MongoDB. The project provides a two-stage response pipeline (initial assistant reply + optional enhancement), persistent chat history, and Docker-ready deployment.
+A modern, production-oriented AI chatbot platform built with FastAPI, OpenAI, and MongoDB. The project provides a two-stage response pipeline (initial assistant reply + optional enhancement), persistent chat history, and Docker-ready deployment.
 
 ## Table of contents
 - [Requirements](#requirements)
