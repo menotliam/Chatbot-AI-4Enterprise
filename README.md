@@ -1,6 +1,6 @@
 # CHATBOT-AI-4Enterprise
 
-A modern, scalable AI chatbot platform built with FastAPI, OpenAI GPT models, and MongoDB. Features conversational AI with chat history management, to### Useful Docker commands
+A modern, scalable AI chatbot platform built with FastAPI, OpenAI GPT models, and MongoDB. Features conversational AI with chat history management, and Docker-ready deployment.
 ```bash
 # Build images
 make docker-build
